@@ -1,4 +1,5 @@
-import 'dart:ui';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Product {
   String name;
@@ -6,9 +7,5 @@ class Product {
   double price;
   String description;
 
-  Product(
-      {required this.name,
-      required this.productImage,
-      required this.price,
-      required this.description});
+  Product(this.name, this.productImage, this.price, this.description);
 }
