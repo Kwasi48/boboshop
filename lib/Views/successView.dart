@@ -6,6 +6,7 @@ class SuccessView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const  Text('Sucesss'
+    'Thanks for buying from us');
   }
 }

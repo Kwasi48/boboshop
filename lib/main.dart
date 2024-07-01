@@ -1,8 +1,15 @@
 import 'package:boboshop/Views/checkoutView.dart';
 import 'package:boboshop/Views/productsView.dart';
+import 'package:boboshop/models/data_class.dart';
+import 'package:boboshop/models/products.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
+  Provider(
+    create: (_) => Product,
+    child: const BoboMain(),
+  );
   runApp(const BoboMain());
 }
 
@@ -11,13 +18,17 @@ class BoboMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ChangeNotifierProvider(create: (context)=> DataClass(),
+    child: MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
-          useMaterial3: true),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent,brightness: Brightness.light
+        ),
+        useMaterial3: true,
+
+      ),
       home: BoboHome(),
-    );
+    ));
   }
 }
 
