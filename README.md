@@ -7,7 +7,9 @@ This is a minimal shopping Application for HNG Task
 This allows you to add items to the cart, remove them, and successfully check out the items.
 
 ## How to Install
-[download project]()
+You will need Flutter SDK and Andriod Studio on Windows to run this project.
+You will need Flutter SDK and Xcode on MacOS to run this project.
+Click on this to [download the project](https://github.com/Kwasi48/boboshop/archive/refs/heads/master.zip) 
 
 
 
