@@ -13,7 +13,7 @@ Click on this to [download the project](https://github.com/Kwasi48/boboshop/arch
 
 
 ## How to Install
- [Here]() is the link to download the app to try out.
+ [Here](https://drive.google.com/file/d/1DyDx8f1ifHGkAwAnU3m4cvizWmjuDtc0/view?usp=drive_link) is the link to download the app to try out.
 
 
 
