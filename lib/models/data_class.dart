@@ -9,12 +9,22 @@ class DataClass extends ChangeNotifier{
 
   void addProduct(Product pro) {
     checkoutList.add(pro);
-    print('added');
+    //print('added');
   notifyListeners();}
 
-  void deleteProduct(Product pro){
-    checkoutList.remove(pro);
+  void deleteProduct(int index){
+    checkoutList.removeAt(index);
+    //print('car');
     notifyListeners();
+  }
+
+  void deleteProduct1(Product pro){
+    checkoutList.remove(pro);
+    //print('car');
+    notifyListeners();
+  }
+  void nextPage(BuildContext context){
+    Navigator.pop(context);
   }
 
 }

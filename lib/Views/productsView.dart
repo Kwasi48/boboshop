@@ -1,4 +1,3 @@
-import 'package:boboshop/models/checkout.dart';
 import 'package:boboshop/models/data_class.dart';
 import 'package:boboshop/models/products.dart';
 import 'package:flutter/material.dart';
@@ -82,7 +81,10 @@ class _ProductViewState extends State<ProductView> {
             // });
             final  snackBar = SnackBar(content: const Text('item added to cart'),
               action: SnackBarAction(label: 'undo',
-                onPressed: (){},
+                onPressed: (){
+                  Provider.of<DataClass>(context, listen: false)
+                      .deleteProduct1(pro);
+                },
               ),);
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
             // checkout().addProduct(pro);

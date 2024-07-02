@@ -56,9 +56,9 @@ class _BoboHomeState extends State<BoboHome> {
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.coffee), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.coffee), label: 'Home'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart_checkout), label: '')
+                icon: Icon(Icons.shopping_cart_checkout), label: 'Checkout')
           ]),
     );
   }
